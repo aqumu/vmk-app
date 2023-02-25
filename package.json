@@ -1,0 +1,43 @@
+{
+	"name": "vmk-sveltekit",
+	"version": "0.0.1",
+	"main": "src/electron.cjs",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "eslint .",
+		"package": "npm run build && electron-builder --config electron-builder.config.json",
+		"dev:package": "npm run build && electron-builder --config electron-builder.config.json --dir",
+		"electron": "concurrently --kill-others \"vite dev\" \"electron src/electron.cjs\""
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-static": "^2.0.1",
+		"@sveltejs/kit": "^1.5.0",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"concurrently": "^7.6.0",
+		"electron": "^23.1.1",
+		"electron-builder": "^23.6.0",
+		"electron-reloader": "^1.2.3",
+		"electron-serve": "^1.1.0",
+		"electron-window-state": "^5.0.3",
+		"eslint": "^8.28.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"sass": "^1.58.3",
+		"svelte": "^3.54.0",
+		"svelte-check": "^3.0.1",
+		"svelte-preprocess": "^5.0.1",
+		"tslib": "^2.4.1",
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^6.3.0"
+	}
+}
