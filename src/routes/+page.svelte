@@ -1,11 +1,6 @@
-<h1>Welcome to hell</h1>
-<p>and suck some dick</p>
+<h1>homepage</h1>
+
+<a href="/configure" class="text-inactive-bar">CONFIGURE</a>
 
 <style lang="scss">
-    p {
-      text-align: end;
-      &:hover {
-        color: blue;
-      }
-    }
 </style>

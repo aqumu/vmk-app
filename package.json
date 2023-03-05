@@ -1,5 +1,8 @@
 {
-	"name": "vmk-sveltekit",
+	"name": "vmk-app",
+	"author": "aqumu",
+	"description": "VMK is a program that allows you to configure your keyboard. It works with ZMK, the firmware that powers custom keyboards.",
+	"license": "MIT",
 	"version": "0.0.1",
 	"main": "src/electron.cjs",
 	"private": true,
